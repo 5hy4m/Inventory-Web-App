@@ -1,0 +1,216 @@
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="HandheldFriendly" content="true">
+  <title>CustomerPage</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="customer_page.css">
+</head>
+
+<body>
+  <!-- SIDEBAR -->
+  <nav class="sidebar p-0 h-100 flex-column navbar navbar-expand-lg navbar-light"
+    style="background-color: rgb(255, 255, 128);">
+    <a class="w-100 m-0 navbar-brand" style="background-color: grey; " href="#">Inventory Web App</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navitems collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class=" navitems-ul flex-column align-items-start navbar-nav">
+        <li class=" flex-row w-100 nav-item">
+          <a class="d-flex justify-content-center nav-link pr-0 pl-0" href="#">Home <span
+              class="sr-only">(current)</span></a>
+        </li>
+
+        <!-- Code Done HERE -->
+        <li class="d-flex justify-content-center flex-row w-100 navitemicon itemside nav-item">
+          <a class="py-auto nav-link txt-center flex-grow-1 " href="#">Features </a>
+          <button class="itemside btn boton" data-toggle="tooltip" data-placement="right" title="Tooltip on top"><img
+              src="plus.png" class="my-auto plusimg" alt="Responsive image"></button>
+        </li>
+
+        <li class="flex-row w-100 itemside itemside nav-item">
+          <a class="d-flex justify-content-center nav-link pr-0 pl-0" href="#">Pricing</a>
+        </li>
+        <!-- to here -->
+
+        <!-- THE WORKING PART -->
+        <li class="flex-row w-100 itemside nav-item accordion" id="accordionExample">
+
+
+          <a class="d-flex justify-content-center nav-link pr-0 pl-0 accordion" href="#" role="button"
+            data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+            Dropdown link
+          </a>
+
+          <div class="  w-100 collapse show" id="collapse1" data-parent="#accordionExample"
+            aria-labelledby="#accordionExample" aria-controls="collapse1">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+
+        </li>
+
+        <li class="flex-row w-100 itemside nav-item accordion">
+
+          <a class="d-flex justify-content-center nav-link pr-0 pl-0" href="#" id="#collapseid" role="button"
+            data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+            Dropdown link
+          </a>
+
+          <div class="  w-100 collapse" id="collapse2" data-parent="#accordionExample"
+            aria-labelledby="#accordionExample" aria-controls="collapse1">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- TOPBAR -->
+  <nav data-container="body" class="p-0 navbar topbar navbar-expand-lg navbar-light" style="background-color: grey;">
+
+
+    <button class="navbar-toggler dropdown" type="button" data-toggle="collapse" data-target="#topbarelements" aria-controls="topbarelements" aria-expanded="false" aria-label="Toggle navigation">
+      <span data-container="body" class="navbar-toggler-icon dropdown-toggle" id="topbarDropdown" role="button" data-toggle="dropdown"
+      aria-haspopup="true" aria-expanded="false"></span>
+    </button>
+
+
+
+    <div class="collapse navbar-collapse "  aria-labelledby="topbarDropdown" id="topbarelements">
+      <!-- plus icon -->
+      <ul class="navbar-nav mr-auto ">
+        <li class="itemtop nav-item">
+          <a class="plusontop nav-link"><img src="plus.png" class="my-auto plusimg" alt="Responsive image"></a>
+        </li>
+
+        <li class="nav-item itemtop">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+
+
+
+        <li class="nav-item itemtop dropdown">
+          <a class="nav-link dropdown-toggle "  href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            style="z-index: 1000;" aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu "  aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+
+        </li>
+
+
+
+
+
+
+        <li class="nav-item itemtop">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+
+  <!-- Customerbar -->
+  <div class="d-flex customerbar flex-column " style="z-index: -1000;" style="border-bottom:solid rgb(95, 94, 94) 1px;">
+    <div class="nav">
+      <div class="dropdown mt-auto ">
+        <button type="button" class="cusdropdown dropdown-toggle" data-toggle="dropdown">
+          All Customers
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Link 1</a>
+          <a class="dropdown-item" href="#">Link 2</a>
+          <a class="dropdown-item" href="#">Link 3</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- CustomerListHeader -->
+    
+      <div class="row listcontainer " >
+        <div class="list font-weight-bold  overflow-scroll col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3">
+          name
+        </div>
+        <div class="list font-weight-bold  overflow-scroll col-xl-2 col-lg-2 col-md-2 col-sm-2">
+          name
+        </div>
+        <div class="list font-weight-bold overflow-scroll col-xl-2 col-lg-2 col-md-2 col-sm-2">
+          name
+        </div>
+        <div class="list font-weight-bold overflow-scroll col-xl-2 col-lg-2 col-md-2 col-sm-2">
+          name
+        </div>
+        <div class="list font-weight-bold overflow-scroll col-xl-3 col-lg-3 col-md-3 col-sm-3">
+          name
+        </div>
+
+        <!-- Customerlists -->
+        
+        <div class="list   list-ele   col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3">
+          Lorem, ipsum dolor sit amet conssumenda Lorem, ipsum dolor sit amet consec
+        </div>
+        <div class=" list    col-xl-2 list-ele col-lg-2 col-md-2 col-sm-2 col-xs-2">
+          name Lorem ipsum dolor sit amet consect.
+        </div>
+        <div class=" list    list-ele col-xl-2 col-lg-2 col-md-2 col-sm-2 col-xs-2">
+          Lorem ipsum
+
+        </div>
+        <div class=" list    list-ele col-xl-2 col-lg-2 col-md-2 col-sm-2 col-xs-2">
+          Lorem unga.
+        </div>
+        <div class="list  overflow-scroll list-ele col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3">
+          Lorem, 
+        </div>
+        <div class="list  overflow-scroll list-ele  col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3">
+          Lorem, 
+        </div>
+      
+      </div>
+    
+  
+
+
+
+
+
+</body>
+<script>
+  var checkScrollBars = function () {
+    var b = $('div');
+    var normalw = 0;
+    var scrollw = 0;
+    if (b.prop('scrollHeight') > b.height()) {
+      normalw = window.innerWidth;
+      scrollw = normalw - b.width();
+      $('#container').css({
+        marginRight: '-' + scrollw + 'px'
+      });
+    }
+  }
+</script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</html>
