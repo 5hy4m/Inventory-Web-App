@@ -9,6 +9,7 @@
   .sidebar {
     width: 15%;
     float: left;
+    height: 100% !important;
     overflow: hidden;
   }
 
@@ -59,10 +60,19 @@
   .txt-center {
     text-align: center;
   }
-
+  
   .customerbar {
     height: 40px;
     border-bottom: solid rgb(216, 216, 212) 2px;
+    border-right:solid rgb(216, 216, 212) 2px;
+  }
+  .customerlist {
+    height: 100%;
+    border-bottom: solid rgb(216, 216, 212) 2px;
+    border-right:solid rgb(216, 216, 212) 2px;
+  }
+  .customerlistbar{
+    height:100%;
   }
 
   .cusdropdown {
@@ -120,4 +130,9 @@
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555; 
+}
+
+
+.content{
+  height: 100%;
 }
