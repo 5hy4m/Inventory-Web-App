@@ -5,92 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <style>
-        .outline{
-            border : solid black 2px;
-        }
-
-        @media (max-width: 576px) {
-        .navbar{
-        }
-       }
-
-    .sidebar{
-      width:15%;
-     float :left;
-    }
-
-    .navbar-brand{
-        text-align: center;
-    }
-    .navitems{
-      height:100%;
-      width:100%;
-    }
-    .navitems-ul{
-      height:100%;
-      width:100%;
-
-    }
-    .topbar{
-      height: 40px;
-    }
-    </style>
+    <link rel="stylesheet" href="staticstyles.css">
 </head>
 <body>
 <!-- SIDEBAR -->
 
-      <nav class="sidebar p-0 h-100 flex-column navbar navbar-expand-lg navbar-light" style="background-color: rgb(255, 255, 128);">
-        <a class="w-100 m-0 navbar-brand" href="#">Inventory Web App</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="navitems collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class=" navitems-ul flex-column align-items-start navbar-nav">
-            <li class=" flex-row w-100 nav-item">
-              <a class="d-flex justify-content-center nav-link pr-0 pl-0" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="flex-row w-100 nav-item">
-              <a class="d-flex justify-content-center nav-link pr-0 pl-0" href="#">Features</a>
-            </li>
-            <li class="flex-row w-100 nav-item">
-              <a class="d-flex justify-content-center nav-link pr-0 pl-0" href="#">Pricing</a>
-            </li>
-            
-            
-<!-- THE WORKING PART -->
-            <li class="flex-row w-100 nav-item accordion" id="accordionExample" >
-              
-              
-              <a class="d-flex justify-content-center nav-link pr-0 pl-0 accordion" href="#" role="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
-                Dropdown link
-              </a>
-              
-              <div class="  w-100 collapse show" id ="collapse1" data-parent="#accordionExample" aria-labelledby="#accordionExample" aria-controls="collapse1">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
+<nav class="sidebar p-0 h-100 flex-column navbar navbar-expand-lg navbar-light"
+style="background-color: rgb(255, 255, 128);">
+<a class="w-100 m-0 navbar-brand" style="background-color: grey; " href="#">Inventory Web App</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+  aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+<div class="navitems collapse navbar-collapse" id="navbarNavDropdown">
+  <ul class=" navitems-ul flex-column align-items-start navbar-nav">
+    <li class=" flex-row w-100 nav-item">
+      <a class="d-flex justify-content-center itemside nav-link pr-0 pl-0" href="#">Home <span
+          class="sr-only">(current)</span></a>
+    </li>
 
-            </li>
-           
-            <li class="flex-row w-100 nav-item accordion">
+    <!-- Code Done HERE -->
+    <li class="d-flex justify-content-center flex-row w-100 navitemicon itemside nav-item">
+      <a class="py-auto nav-link txt-center flex-grow-1 " href="#">Features </a>
+      <button class="itemside btn boton" data-toggle="tooltip" data-placement="right" title="Tooltip on top"><img
+          src="plus.png" class="my-auto plusimg" alt="Responsive image"></button>
+    </li>
 
-              <a class="d-flex justify-content-center nav-link pr-0 pl-0" href="#" id="#collapseid" role="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
-                Dropdown link 
-              </a>
+    <li class="flex-row w-100 itemside itemside nav-item">
+      <a class="d-flex justify-content-center nav-link pr-0 pl-0" href="#">Pricing</a>
+    </li>
+    <!-- to here -->
 
-              <div class="  w-100 collapse" id = "collapse2" data-parent="#accordionExample" aria-labelledby="#accordionExample" aria-controls="collapse1">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
+    <!-- THE WORKING PART -->
+    <li class="flex-row w-100 itemside nav-item accordion" id="accordionExample">
 
 
-          </ul>
-        </div>
-      </nav>
+      <a class="d-flex justify-content-center nav-link pr-0 pl-0 accordion" href="#" role="button"
+        data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+        Dropdown link
+      </a>
+
+      <div class="  w-100 collapse show" id="collapse1" data-parent="#accordionExample"
+        aria-labelledby="#accordionExample" aria-controls="collapse1">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+      </div>
+
+    </li>
+
+    <li class="flex-row w-100 itemside nav-item accordion">
+
+      <a class="d-flex justify-content-center nav-link pr-0 pl-0" href="#" id="#collapseid" role="button"
+        data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+        Dropdown link
+      </a>
+
+      <div class="  w-100 collapse" id="collapse2" data-parent="#accordionExample"
+        aria-labelledby="#accordionExample" aria-controls="collapse1">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+      </div>
+    </li>
+  </ul>
+</div>
+</nav>
 
 <!-- TOPBAR -->
 
@@ -101,24 +81,24 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
+              <li class="nav-item itemtop active">
                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
               </li>
-              <li class="nav-item">
+              <li class="itemtop nav-item">
                 <a class="nav-link" href="#">Link</a>
               </li>
-              <li class="nav-item dropdown">
+              <li class="itemtop nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Dropdown
                 </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Something else here</a>
+                <div class="itemtop dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="itemtop dropdown-item" href="#">Action</a>
+                  <a class="itemtop dropdown-item" href="#">Another action</a>
+                  <div class=" dropdown-divider"></div>
+                  <a class="itemtop dropdown-item" href="#">Something else here</a>
                 </div>
               </li>
-              <li class="nav-item">
+              <li class="itemtop nav-item">
                 <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
               </li>
             </ul>

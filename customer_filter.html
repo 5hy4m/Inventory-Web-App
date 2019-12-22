@@ -7,72 +7,72 @@
   <title>CustomerPage</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="staticstyles.css">
   <link rel="stylesheet" href="customer_filter.css">
 </head>
 
 <body>
-  <!-- SIDEBAR -->
   <nav class="sidebar p-0 h-100 flex-column navbar navbar-expand-lg navbar-light"
-    style="background-color: rgb(255, 255, 128);">
-    <a class="w-100 m-0 navbar-brand" style="background-color: grey; " href="#">Inventory Web App</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="navitems collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class=" navitems-ul flex-column align-items-start navbar-nav">
-        <li class=" flex-row w-100 nav-item">
-          <a class="d-flex justify-content-center nav-link pr-0 pl-0" href="#">Home <span
-              class="sr-only">(current)</span></a>
-        </li>
+style="background-color: rgb(255, 255, 128);">
+<a class="w-100 m-0 navbar-brand" style="background-color: grey; " href="#">Inventory Web App</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+  aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+<div class="navitems collapse navbar-collapse" id="navbarNavDropdown">
+  <ul class=" navitems-ul flex-column align-items-start navbar-nav">
+    <li class=" flex-row w-100 nav-item">
+      <a class="d-flex justify-content-center nav-link pr-0 pl-0" href="#">Home <span
+          class="sr-only">(current)</span></a>
+    </li>
 
-        <!-- Code Done HERE -->
-        <li class="d-flex justify-content-center flex-row w-100 navitemicon itemside nav-item">
-          <a class="py-auto nav-link txt-center flex-grow-1 " href="#">Features </a>
-          <button class="itemside btn boton" data-toggle="tooltip" data-placement="right" title="Tooltip on top"><img
-              src="plus.png" class="my-auto plusimg" alt="Responsive image"></button>
-        </li>
+    <!-- Code Done HERE -->
+    <li class="d-flex justify-content-center flex-row w-100 navitemicon itemside nav-item">
+      <a class="py-auto nav-link txt-center flex-grow-1 " href="#">Features </a>
+      <button class="itemside btn boton" data-toggle="tooltip" data-placement="right" title="Tooltip on top"><img
+          src="plus.png" class="my-auto plusimg" alt="Responsive image"></button>
+    </li>
 
-        <li class="flex-row w-100 itemside itemside nav-item">
-          <a class="d-flex justify-content-center nav-link pr-0 pl-0" href="#">Pricing</a>
-        </li>
-        <!-- to here -->
+    <li class="flex-row w-100 itemside itemside nav-item">
+      <a class="d-flex justify-content-center nav-link pr-0 pl-0" href="#">Pricing</a>
+    </li>
+    <!-- to here -->
 
-        <!-- THE WORKING PART -->
-        <li class="flex-row w-100 itemside nav-item accordion" id="accordionExample">
+    <!-- THE WORKING PART -->
+    <li class="flex-row w-100 itemside nav-item accordion" id="accordionExample">
 
 
-          <a class="d-flex justify-content-center nav-link pr-0 pl-0 accordion" href="#" role="button"
-            data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
-            Dropdown link
-          </a>
+      <a class="d-flex justify-content-center nav-link pr-0 pl-0 accordion" href="#" role="button"
+        data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+        Dropdown link
+      </a>
 
-          <div class="  w-100 collapse show" id="collapse1" data-parent="#accordionExample"
-            aria-labelledby="#accordionExample" aria-controls="collapse1">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
+      <div class="  w-100 collapse show" id="collapse1" data-parent="#accordionExample"
+        aria-labelledby="#accordionExample" aria-controls="collapse1">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+      </div>
 
-        </li>
+    </li>
 
-        <li class="flex-row w-100 itemside nav-item accordion">
+    <li class="flex-row w-100 itemside nav-item accordion">
 
-          <a class="d-flex justify-content-center nav-link pr-0 pl-0" href="#" id="#collapseid" role="button"
-            data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
-            Dropdown link
-          </a>
+      <a class="d-flex justify-content-center nav-link pr-0 pl-0" href="#" id="#collapseid" role="button"
+        data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+        Dropdown link
+      </a>
 
-          <div class="  w-100 collapse" id="collapse2" data-parent="#accordionExample"
-            aria-labelledby="#accordionExample" aria-controls="collapse1">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </nav>
+      <div class="  w-100 collapse" id="collapse2" data-parent="#accordionExample"
+        aria-labelledby="#accordionExample" aria-controls="collapse1">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+      </div>
+    </li>
+  </ul>
+</div>
+</nav>
   <!-- TOPBAR -->
   <nav data-container="body" class="p-0 navbar topbar navbar-expand-lg navbar-light" style="background-color: grey;">
 
